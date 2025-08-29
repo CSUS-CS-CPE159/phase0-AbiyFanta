@@ -6,7 +6,9 @@
  * @return value indicating the length of the string
  */
 int strlen(char *str) {
-    //Implement me!
+    const char *temp = str;
+    while (*temp) ++temp;
+    return (size_t)(temp-str);
     return 0;
 }
 
